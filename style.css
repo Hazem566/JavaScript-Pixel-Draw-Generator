@@ -71,6 +71,13 @@ button {
     border-radius: 0.2rem;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 300ms ease;
+}
+button:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+.active {
+    background-color: rgba(0,0,0,0.8);
 }
 #color {
     width: 60px;
@@ -83,6 +90,8 @@ button {
 }
 .boxsContainer {
     display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
 @media only screen and (max-width: 768px) {
     .box {
